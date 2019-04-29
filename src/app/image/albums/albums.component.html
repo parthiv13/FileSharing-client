@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <div class="albums" *ngFor="let album of albums">
+    <div class="album">
+      <figure>
+        <img class="album__img" src="http://localhost:8080/public/{{album}}/{{album}}.jpg" alt="{{album}}">
+      </figure>
+      <div class="album__overlay">
+        <h2 class="album__title">{{ album | uppercase }}</h2>
+        <a class="album__link" href="">Open</a>
+      </div>
+    </div>
+  </div>
+</div>
